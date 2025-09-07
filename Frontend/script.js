@@ -30,7 +30,7 @@ form.addEventListener('submit', function (e) {
     difficulty,
     tags
   });
-  const searchUrl = `https://dsa-searchengine-backend.onrender.com/api/search?${queryParams}`;
+  const searchUrl = `/api/search?${queryParams}`;
   fetch(searchUrl)
     .then(response => {
       if (!response.ok) throw new Error("Search failed");
